@@ -121,6 +121,11 @@ nlu:
     - How can I save more money?
     - Tips for budgeting
     - Help me with my budget
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
 
 - entity: account_type
   examples: |
