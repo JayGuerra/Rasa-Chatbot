@@ -109,22 +109,45 @@ nlu:
     - Transfer $100 from checking to savings
     - Send $50 to John for dinner
     - I want to move some money to my savings account
+    - Transfer $25 from savings to checking
+    - Send $60 to my brother
+    - I want to move some money to my checking account
+    - Transfer $70 from checking to savings
+    - Send $30 to my friend
+    - I want to move some money to my savings account
+    - Transfer $40 from savings to checking
+    - Send $20 to my landlord
+    - I want to move some money to my checking account
+    - Transfer $10 from checking to savings
+    - Send $5 to my sister
+    - I want to move some money to my savings account
 
 - intent: pay_bill
   examples: |
     - Pay my electricity bill
     - Make a payment for my credit card
     - I need to pay my rent
+    - Pay my phone bill
+    - I want to pay my internet bill
+    - Make a payment for my water bill
+    - I need to pay my gas bill
+    - Pay my heating bill
+    - Make a payment for my cable bill
+    - I want to pay my insurance bill
+    - Pay my car bill
+    - Make a payment for my mortgage
+    - I need to pay my loan
+    - Pay my student loan
+    - Make a payment for my college fund
+    - I want to pay my retirement account
+    - Pay my investment account
+    - Make a payment for my line of credit
 
 - intent: ask_budgeting_advice
   examples: |
     - How can I save more money?
     - Tips for budgeting
     - Help me with my budget
-    - How can I save more money?
-    - How can I save more money?
-    - How can I save more money?
-    - How can I save more money?
     - How can I save more money?
 
 - entity: account_type
@@ -145,6 +168,12 @@ nlu:
     - 50 dollars
     - 25 bucks
     - 60
+    - 70
+    - 30
+    - 40
+    - 20
+    - 10
+    - 5
     
 
 - entity: recipient
@@ -173,73 +202,11 @@ nlu:
     - my coach
     - my trainer
     - my instructor
-    - my neighbor
-    - my classmate
-    - my student
-    - my client
-    - my customer
-    - my patient
-    - my audience
-    - my fan
-    - my follower
-    - my subscriber
-    - my reader
-    - my viewer
-    - my listener
-    - my user
-    - my member
-    - my guest
-    - my visitor
-    - my fan
-    - my supporter
-    - my friend
-    - my buddy
-    - my pal
-    - my mate
-    - my partner
-    - my colleague
-    - my co-worker
-    - my associate
-    - my ally
-    - my comrade
-    - my confidant
-    - my mentor
-    - my role model
-    - my hero
-    - my idol
-    - my inspiration
-    - my motivation
-    - my muse
-    - my guide
-    - my advisor
-    - my consultant
-    - my expert
-    - my specialist
-    - my professional
-    - my master
-    - my leader
-    - my boss
-    - my manager
-    - my director
-    - my executive
-    - my president
-    - my CEO
-    - my founder
-    - my entrepreneur
-    - my owner
-    - my investor
-    - my shareholder
-    - my stakeholder
-    - my partner
-    - my collaborator
-    - my co-founder
-    - my co-owner
-    - my co-investor
-    - my co-worker
-    - my co-creator
-    - my co-author
-    - my co-pilot
-    - my co-driver
-    - my co-captain
-    - my co-counsel
-    - my co-presenter
+
+- intent: account_info
+  examples: |
+    - I want to check my account
+    - Can you show me my account balance?
+    - account information
+    - details about my account
+    

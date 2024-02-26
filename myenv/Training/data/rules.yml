@@ -1,13 +1,28 @@
+#file: noinspection YAMLSchemaValidation
 version: "3.1"
 
 rules:
-
+- rule: Say hello anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: Say hours when asked about hours
+  steps:
+  - intent: hours
+  - action: utter_hours
+- rule: Show account balance when asked
+  steps:
+  - intent: check_balance
+  - action: utter_account_balance
+- rule: Show account info when asked
+  steps:
+  - intent: account_info
+  - action: utter_account_info
